@@ -1,0 +1,2 @@
+singer-python==5.13.0
+pyspark==3.4.0

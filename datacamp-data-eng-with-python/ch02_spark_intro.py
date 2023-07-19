@@ -77,6 +77,7 @@ prices.fillna(25, subset=["quantity"]).show()
 
 from pyspark.sql.functions import col, when
 from datetime import date, timedelta
+from pyspark.sql.functions import col, avg, count
 
 one_year_from_now = date.today().replace(year=date.today().year + 1)
 better_frame = employees.withColumn(

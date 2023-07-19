@@ -1,4 +1,5 @@
 import singer
+import json
 
 columns = ("id", "name", "age", "has_children")
 
@@ -25,3 +26,6 @@ singer.write_schema(
   stream_name='DC_employees',
   key_properties=["id"]
 )
+
+with open("foo.json", mode="w") as fh:
+  json.dump(obj=json_schema, fp=fh)

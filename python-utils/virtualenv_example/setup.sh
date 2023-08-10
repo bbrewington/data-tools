@@ -17,3 +17,7 @@ python3 -m venv .venv
 source .venv/$VENV_SUBDIR/activate
 python3 -m pip install --upgrade pip
 pip install -r requirements.txt
+
+# If you need to run this virtual environment in a Jupyter Notebook, uncomment these lines
+# pip install ipykernel
+# python3 -m ipykernel install --user --name=NAME_IT_HERE --display-name=DISPLAY_NAME_HERE

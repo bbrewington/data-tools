@@ -20,4 +20,4 @@ pip install -r requirements.txt
 
 # If you need to run this virtual environment in a Jupyter Notebook, uncomment these lines
 # pip install ipykernel
-# python3 -m ipykernel install --user --name=NAME_IT_HERE --display-name=DISPLAY_NAME_HERE
+# python3 -m ipykernel install --user --name ADD_NAME_HERE

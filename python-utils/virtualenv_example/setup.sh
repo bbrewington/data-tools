@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # User-defined variables
 VENV_NAME=.venv;
 WORKING_DIRECTORY=.;

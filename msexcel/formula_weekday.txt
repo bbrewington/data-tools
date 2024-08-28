@@ -1,0 +1,5 @@
+# A2 is a placeholder for a cell containing a date value.  The formula below will
+# calculate the day of the week
+# TODO: convert this to an actual VBA function
+
+=VLOOKUP(WEEKDAY(A2),{1,"Sun";2,"Mon";3,"Tue";4,"Wed";5,"Thu";6,"Fri";7,"Sat"},2,FALSE)

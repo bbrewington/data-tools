@@ -40,6 +40,8 @@ fi
 # Create virtual environment & activate it
 $PYTHON_EXEC -m venv $VENV_NAME;
 source "$VENV_NAME/$VENV_SUBDIR/activate";
+# Alternatively, as a one-liner:
+# source $VENV_NAME/$([[ "$OSTYPE" == "msys" || "$OSTYPE" == "win32" ]] && echo "Scripts" || echo "bin")/activate
 $PYTHON_EXEC -m pip install --upgrade pip;
 pip install -r $(git rev-parse --show-toplevel)/$REQUIREMENTS_TXT_DIR/$REQUIREMENTS_TXT_FILE;
 

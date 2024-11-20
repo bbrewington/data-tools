@@ -1,7 +1,9 @@
 Sub RemDuplicate_UserCols()
 
-' Get user input "MyUserInput" of # columns to work on,
-' loop through column 1:MyUserInput, and remove duplicates & sort ascending
+' 1. Prompt user with Input Message Box --> # columns to work on
+' 2. Replace each column ^ with duplicates removed & sorted ascending
+'
+' **THIS IS DESTRUCTIVE & CAN'T UNDO!  RUN IT ON A COPY OF THE DATA**
 
 Dim i As Integer
 

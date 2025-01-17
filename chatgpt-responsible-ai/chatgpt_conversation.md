@@ -7,9 +7,11 @@ __________________________
 
 Brent: write a scikit-learn pipeline using XGBoost that can ingest data from a BigQuery table, preprocess the data, and fit and hyperparameter tune a classification model
 
-ChatGPT: Sure, I can help you with that. Here's an example Scikit-learn pipeline that uses XGBoost to train a classification model on data from a BigQuery table. This pipeline will preprocess the data, fit and hyperparameter tune the model, and output evaluation metrics:pythonCopy code# Import necessary libraries
+ChatGPT: Sure, I can help you with that. Here's an example Scikit-learn pipeline that uses XGBoost to train a classification model on data from a BigQuery table. This pipeline will preprocess the data, fit and hyperparameter tune the model, and output evaluation metrics:
+
 
 ```python
+# Import necessary libraries
 import pandas as pd
 import numpy as np
 from google.cloud import bigquery
@@ -83,7 +85,7 @@ In this pipeline, we first use BigQuery to retrieve the data from a specified ta
 
 Brent: now build in a way to visualize shap values
 
-ChatGPT: Sure, I can help you with that. Here's an updated version of the pipeline that includes SHAP value visualization:pythonCopy code
+ChatGPT: Sure, I can help you with that. Here's an updated version of the pipeline that includes SHAP value visualization:
 
 ```python
 # Import necessary libraries
@@ -304,7 +306,7 @@ Note that in this example, we assume that the preprocess_data function is encaps
 
 Brent: now, show me the preprocess_data function
 
-ChatGPT: Sure, here's an example of a preprocess_data function that performs some basic preprocessing steps:pythonCopy code
+ChatGPT: Sure, here's an example of a preprocess_data function that performs some basic preprocessing steps:
 
 ```python
 import pandas as pd
